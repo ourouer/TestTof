@@ -23,16 +23,14 @@ namespace totof {
 
     }
 
-    // note that Caml casing yields lower case
-    // block text with spaces
+    export function setPwmRGB(red: number, green: number, blue: number): void {
 
-    //% block
-    export function testPin() {    
-    let buf = pins.createBuffer(4);
+        let buf = pins.createBuffer(4);
         buf[0] = RGB;
-        buf[1] = 1;
-        buf[2] = 0;
-        buf[3] = 0;
+        buf[1] = red;
+        buf[2] = green;
+        buf[3] = blue;
+
         pins.i2cWriteBuffer(PWM_ADD, buf);
     }
 }
