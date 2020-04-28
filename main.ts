@@ -8,7 +8,7 @@
 namespace totof {
 
     //% block
-    export function helloWorldTof() {
+    export function afficheTof() {
         basic.showString("Tof")
 
     }
