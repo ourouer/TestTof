@@ -4,7 +4,7 @@
  * The most important macro "block" specifies that a
  * block should be generated for a **exported** function.
  */
-//% color="#FFAAFF"
+//% color="#FFAAFF" icon="\ufbl9" block="Tof"
 namespace totof {
 
     //% block
