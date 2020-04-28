@@ -1,3 +1,5 @@
+const PWM_ADD = 0x01
+const RGB = 0x01
 /**
  * Functions are mapped to blocks using various macros 
  * in comments starting with % (e.g., //% block).
@@ -28,10 +30,9 @@ namespace totof {
     export function testPin() {    
     let buf = pins.createBuffer(4);
         buf[0] = RGB;
-        buf[1] = red;
-        buf[2] = green;
-        buf[3] = blue;
-
+        buf[1] = 1;
+        buf[2] = 0;
+        buf[3] = 0;
         pins.i2cWriteBuffer(PWM_ADD, buf);
     }
 }
