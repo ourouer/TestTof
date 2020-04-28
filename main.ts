@@ -20,4 +20,18 @@ namespace totof {
     export function camlCaseTwo() {
 
     }
+
+    // note that Caml casing yields lower case
+    // block text with spaces
+
+    //% block
+    export function testPin() {    
+    let buf = pins.createBuffer(4);
+        buf[0] = RGB;
+        buf[1] = red;
+        buf[2] = green;
+        buf[3] = blue;
+
+        pins.i2cWriteBuffer(PWM_ADD, buf);
+    }
 }
