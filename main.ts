@@ -9,6 +9,7 @@ namespace totof {
 
     //% block
     export function helloWorldTof() {
+        basic.showString("Tof")
 
     }
 
