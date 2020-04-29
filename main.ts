@@ -9,7 +9,7 @@
  *Ma premiere extension de test
  */
 namespace totof {
-    export enum testVar {
+    export enum Valeur {
         //% blockId="Gauche" block="Gauche"
         Gauche = 0,
         //% blockId="Droite" block="Droite"
@@ -22,18 +22,18 @@ namespace totof {
     
     //% weight=100
     //% group="Tests"
-    //% blockId=ID_Affiche_Tof block="Set|%index|to|%Direction|at the speed|%speed" 
-    export function traductionFranToAng(testVar: Mot): void {
-       if (testVar == Mot.Gauche) { 
+    //% blockId=ID_Affiche_Tof block="Traduction de |%mot| en anglais" 
+    export function traductionFranToAng(mot: Valeur): void {
+       if (mot == Valeur.Gauche) { 
             basic.showString("Left");
        }
-       else if (testVar == Mot.Droite) { 
+       else if (mot == Valeur.Droite) { 
             basic.showString("Right");
        }
-       else if (testVar == Mot.Avant) { 
+       else if (mot == Valeur.Avant) { 
             basic.showString("Forward");
        }
-       else if (testVar == Mot.Arriere) { 
+       else if (mot == Valeur.Arriere) { 
             basic.showString("Backward");
        }
     }
