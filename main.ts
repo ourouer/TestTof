@@ -51,9 +51,9 @@ namespace totof {
     //% group="Tests"
     //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
      export function FaitQueukChose(): neopixel.Strip {
-       // if (!yahStrip) {
-       //  yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
-       // }
+        if (!yahStrip) {
+         yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
+        }
     return yahStrip;
     }
     
