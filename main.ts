@@ -21,6 +21,16 @@ namespace totof {
         Arriere = 3
     }
     
+    function setPwmRGB(red: number, green: number, blue: number): void {
+
+        let buf = pins.createBuffer(4);
+        buf[0] = RGB;
+        buf[1] = red;
+        buf[2] = green;
+        buf[3] = blue;
+        
+        pins.i2cWriteBuffer(PWM_ADD, buf);
+    }    
     //% weight=100
     //% group="Tests"
     //% blockId=ID_Affiche_Tof block="Traduction de |%mot| en anglais" 
@@ -58,10 +68,19 @@ namespace totof {
     }
     
     
-    //% block
-    export function camlCaseTwo() {
+    //% blockId=Tinybit_RGB_Car_Big block="RGB_Car_Big|value %value"
+    //% weight=98
+    //% blockGap=10
+    //% name.fieldEditor="gridpicker" name.fieldOptions.columns=4
+    export function RGB_Car_Big(value: number): void {
 
-    }
+        switch (value) {
+            case 0: setPwmRGB(0, 0, 0);   break;
+            case 1: setPwmRGB(255, 0, 0);   break;     
+            case 2: setPwmRGB(255, 255, 0);   break;
+            case 3: setPwmRGB(255, 255, 255);   break;     
+            }
+        }
 
     /*export function setPwmRGB(red: number, green: number, blue: number): void {
 
