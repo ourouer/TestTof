@@ -5,10 +5,10 @@
  */
 namespace totof {
     //let alreadyInit = 0
-    //const PWM_ADD = 0x01
-    //const MOTOR = 0x02
+    const PWM_ADD = 0x01
+    const MOTOR = 0x02
     const RGB = 0x01
-    //let yahStrip: neopixel.Strip;
+    let yahStrip: neopixel.Strip;
     
     export enum Valeur {
         //% blockId="Gauche" block="Gauche"
