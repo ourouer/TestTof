@@ -3,6 +3,8 @@
 //const MOTOR = 0x02
 //const RGB = 0x01
 //let yahStrip: neopixel.Strip;
+let yahStrip = 14;
+
 //% weight=10 color=#FFAAFF icon="\uf1b9" block="Tof"
 //% groups='["Tests", "Mouvements"]'
 /**
@@ -45,8 +47,7 @@ namespace totof {
     //    if (!yahStrip) {
     //     yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
     //    }
-    //return yahStrip; 
-    return 0;
+    return yahStrip;
     }
     
     
