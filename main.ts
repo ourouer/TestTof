@@ -41,17 +41,21 @@ namespace totof {
     
     //% weight=100
     //% group="Tests"
-    //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
-   export function FaitQueukChose(): boolean {
-   let totobool = false;
+    //% blockId=ID_retourVrai block="retourVrai" 
+   export function retourVrai(): boolean {
+   let totobool = true;
    return totobool;
    }
-    /* export function FaitQueukChose(): neopixel.Strip {
-        if (!yahStrip) {
-         yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
-        }
+
+    //% weight=100
+    //% group="Tests"
+    //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
+     export function FaitQueukChose(): neopixel.Strip {
+       // if (!yahStrip) {
+       //  yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
+       // }
     return yahStrip;
-    }*/
+    }
     
     
     //% block
