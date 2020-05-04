@@ -2,7 +2,7 @@
 //const PWM_ADD = 0x01
 //const MOTOR = 0x02
 //const RGB = 0x01
-
+//let yahStrip: neopixel.Strip;
 //% weight=10 color=#FFAAFF icon="\uf1b9" block="Tof"
 //% groups='["Tests", "Mouvements"]'
 /**
@@ -37,10 +37,19 @@ namespace totof {
             basic.showString("Backward");
        }
     }
-
-    // note that Caml casing yields lower case
-    // block text with spaces
-
+    
+    //% weight=100
+    //% group="Tests"
+    //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
+    export function FaitQueukChose():neopixel.Strip {
+    //    if (!yahStrip) {
+    //     yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
+    //    }
+    //return yahStrip; 
+    return 0;
+    }
+    
+    
     //% block
     export function camlCaseTwo() {
 
