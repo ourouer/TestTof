@@ -41,7 +41,7 @@ namespace totof {
     //% weight=100
     //% group="Tests"
     //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
-    export function FaitQueukChose():neopixel.Strip {
+    export function FaitQueukChose(): neopixel.Strip {
     //    if (!yahStrip) {
     //     yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
     //    }
