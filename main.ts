@@ -3,7 +3,7 @@
 //const MOTOR = 0x02
 //const RGB = 0x01
 //let yahStrip: neopixel.Strip;
-let yahStrip = 14;
+
 
 //% weight=10 color=#FFAAFF icon="\uf1b9" block="Tof"
 //% groups='["Tests", "Mouvements"]'
@@ -43,12 +43,16 @@ namespace totof {
     //% weight=100
     //% group="Tests"
     //% blockId=ID_FaitQueukChose block="FaitQueukChose" 
-    export function FaitQueukChose(): neopixel.Strip {
-    //    if (!yahStrip) {
-    //     yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
-    //    }
+   export function FaitQueukChose(): boolean {
+   let totobool = false;
+   return totobool;
+   }
+    /* export function FaitQueukChose(): neopixel.Strip {
+        if (!yahStrip) {
+         yahStrip = neopixel.create(DigitalPin.P12, 2, NeoPixelMode.RGB);   
+        }
     return yahStrip;
-    }
+    }*/
     
     
     //% block
